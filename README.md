@@ -1,2 +1,32 @@
-# library_system
-A simple web-based Student Attendance System using Node.js, HTML, and CSS. Teachers can mark attendance, students can view their records, and admins manage users and classes. Ideal for small institutions to track and manage attendance efficiently.
+# 🎓 Student Attendance System
+
+A simple web-based attendance system built using **Node.js**, **HTML**, and **CSS**. It allows teachers to mark attendance, students to view their records, and admins to manage users and classes.
+
+---
+
+## 📌 Features
+
+### 👨‍🏫 Teachers
+- Secure login
+- View and manage class attendance
+- Generate attendance reports
+
+### 👩‍🎓 Students
+- View personal attendance history
+
+### 🛠 Admin
+- Manage students, teachers, and class assignments
+
+---
+
+## 🧱 Tech Stack
+
+- **Frontend:** HTML, CSS
+- **Backend:** Node.js (Express)
+- **Database:** MySQL
+- **Package Management:** NPM
+
+---
+
+## 🗂️ Project Structure
+
