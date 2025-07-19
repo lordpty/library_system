@@ -17,6 +17,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/books', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'books.html'));
+});
+
+
 // Start Express server
 app.listen(port, () => {
   console.log(`Library Book Management System app listening at http://localhost:${port}`);

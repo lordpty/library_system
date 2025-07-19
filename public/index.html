@@ -8,43 +8,48 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Library System</a>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-dark" href="#">Library System</a>
+      <a class="btn btn-success float-right" href="#">Login</a>
     </div>
   </nav>
 
-  <div class="container mt-5">
+  <div id='main_section' class="container-fluid">
+  <div class="container-fluid mt-5">
     <div class="text-center">
       <h1 class="display-4">Welcome to the Library Book Management System</h1>
       <p class="lead">Easily manage books, borrowers, and loans for your small library or classroom.</p>
-      <a href="/books" class="btn btn-success btn-lg mt-3">Get Started</a>
+      <a id='main_button' href="/books" class="btn btn-success btn-lg mt-3">Get Started</a>
     </div>
-    <div class="row mt-5 cards-container">
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Manage Books</h5>
-            <p class="card-text">Add, edit, and search for books in your collection.</p>
-          </div>
+
+    
+        <div class="row mt-5 cards-container">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Manage Books</h5>
+                <p class="card-text">Add, edit, and search for books in your collection.</p>
+            </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Borrowers</h5>
-            <p class="card-text">Register and view borrowers, track who has which books.</p>
-          </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Borrowers</h5>
+                <p class="card-text">Register and view borrowers, track who has which books.</p>
+            </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Loans & Returns</h5>
-            <p class="card-text">Easily check books in and out, and see loan status instantly.</p>
-          </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+                <h5 class="card-title">Loans & Returns</h5>
+                <p class="card-text">Easily check books in and out, and see loan status instantly.</p>
+            </div>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
   </div>
 

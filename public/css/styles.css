@@ -1,3 +1,39 @@
+body{
+    font-family: 'Fjalla One';
+}
+
 .cards-container{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+}
+
+#main_section{
+    color:white;
+    background-image:url('/img/library.jpg');
+    padding: 100px 40px;
+    background-color:black;
+}
+
+#main_button{
+    font-size:25px;
+}
+
+.card-title {
+    color: #0d6efd; /* Bootstrap primary */
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-container{
+    height:200px;
+}
+
+#book1img{
+    background-image:url('/img/book1.jpg');
+}
+
+#book2img{
+    background-image:url('/img/book2.jpg');
 }
