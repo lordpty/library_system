@@ -26,6 +26,10 @@ body{
     font-size: 1rem;
 }
 
+#browseTitle{
+    color: #5d5d5d !important;
+}
+
 .card-container{
     height:200px;
 }
