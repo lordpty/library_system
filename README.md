@@ -1,32 +1,36 @@
-# 🎓 Student Attendance System
+# Library Book Management System
 
-A simple web-based attendance system built using **Node.js**, **HTML**, and **CSS**. It allows teachers to mark attendance, students to view their records, and admins to manage users and classes.
+A simple, user-friendly web application for managing books and loans in small libraries or classrooms.
 
----
+## Overview
 
-## 📌 Features
+This system helps librarians efficiently maintain their book inventory and track borrowed books without relying on manual paperwork. It supports adding books and borrowers, checking books in and out, and viewing overdue loans with basic status indicators.
 
-### 👨‍🏫 Teachers
-- Secure login
-- View and manage class attendance
-- Generate attendance reports
+The frontend uses **HTML**, **CSS**, **JavaScript**, and **Bootstrap** for a clean and responsive UI. The backend is built with **Express.js** to handle API endpoints and data storage.
 
-### 👩‍🎓 Students
-- View personal attendance history
+## Features
 
-### 🛠 Admin
-- Manage students, teachers, and class assignments
+- Add, view, and search for books by title or author
+- Register borrowers with basic contact information
+- Check out books to borrowers with due dates
+- Check in books to mark them as returned and available
+- Highlight overdue loans by due date
+- Simple and intuitive web interface
 
----
+## Technology Stack
 
-## 🧱 Tech Stack
+- Frontend: HTML, CSS, JavaScript, Bootstrap
+- Backend: Node.js, Express.js
+- Data Storage: (Specify your choice here, e.g., in-memory, JSON file, or database)
 
-- **Frontend:** HTML, CSS
-- **Backend:** Node.js (Express)
-- **Database:** MySQL
-- **Package Management:** NPM
+## Getting Started
 
----
+### Prerequisites
 
-## 🗂️ Project Structure
+- Node.js and npm installed
+- (Optional) A database installed if used (e.g., MongoDB, SQLite)
+
+### Installation
+
+1. Clone the repository:
 
