@@ -7,6 +7,9 @@ const port = 3000;
 // Serve static files (CSS, JS, images) from public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.set('views', path.join(__dirname,'views'));
+app.set('view engine', 'ejs');
+
 // Serve Bootstrap CSS/JS and Popper from node_modules via static paths
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
@@ -18,19 +21,19 @@ app.use('/api', booksRouter);
 
 // Route to serve the landing page
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.render('index');
 });
 
 app.get('/books', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'books.html'));
+  res.render('books');
 });
 
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+  res.render('login');
 });
 
 app.get('/register', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'register.html'));
+  res.render('register');
 });
 
 // Start Express server

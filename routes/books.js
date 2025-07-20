@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const db = require('../config/db'); // Adjust the path as needed
+const db = require('../config/db');
 
 // Get all books
 router.get('/books', async (req, res) => {
