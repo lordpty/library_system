@@ -41,3 +41,13 @@ body{
 #book2img{
     background-image:url('/img/book2.jpg');
 }
+
+#loginBackground{
+    background-image:url('/img/login.jpg');
+    padding:25px;
+}
+
+#registerBackground{
+    background-image:url('/img/register.jpg');
+    background-size: cover;
+}

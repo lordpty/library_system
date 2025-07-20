@@ -12,6 +12,10 @@ app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
 app.use('/popper', express.static(path.join(__dirname, 'node_modules/@popperjs/core/dist/umd')));
 
+
+const booksRouter = require('./routes/books'); // Adjust path as needed
+app.use('/api', booksRouter);
+
 // Route to serve the landing page
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
@@ -21,6 +25,13 @@ app.get('/books', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'books.html'));
 });
 
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
+app.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'register.html'));
+});
 
 // Start Express server
 app.listen(port, () => {
